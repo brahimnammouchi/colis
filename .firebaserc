@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "colis-a767e": {
+      "hosting": {
+        "colis": [
+          "colis-a767e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "colis-a767e"
+  }
+}
