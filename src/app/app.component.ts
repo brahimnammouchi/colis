@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +7,4 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'colis';
-  constructor(private router: Router) { }
-
-redirectToInscription() {
-  this.router.navigate(['/inscription-livreur']);
-}
 }
