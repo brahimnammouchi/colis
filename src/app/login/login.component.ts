@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup,FormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../shared/auth.service'; // Importez votre service d'authentification si vous en avez un
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,8 +13,9 @@ export class LoginComponent {
   errorMessage: string;
 
   constructor(
+    private router: Router,
     private fb: FormBuilder,
-    private authService: AuthService // Injectez le service d'authentification
+    private authService: AuthService, // Injectez le service d'authentification
   ) {
     this.createForm();
   }
@@ -24,6 +26,9 @@ export class LoginComponent {
       password: ['', Validators.required]
     });
   }
+  navigateToRegistration() {
+    this.router.navigate(['/register']); // Remplacez 'inscription' par le chemin de votre page d'inscription
+  }
 
   login() {
     const email = this.loginForm.value.email;
@@ -33,7 +38,7 @@ export class LoginComponent {
       .then(success => {
         if (success) {
           // Rediriger l'utilisateur après la connexion
-          // Par exemple : this.router.navigate(['/dashboard']);
+          this.router.navigate(['/dashboard']);
         } else {
           this.errorMessage = 'Identifiants incorrects';
         }

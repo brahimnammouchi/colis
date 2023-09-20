@@ -5,7 +5,7 @@ export const environment = {
     projectId: "colis-a767e",
     storageBucket: "colis-a767e.appspot.com",
     messagingSenderId: "412474184299",
-    appId: "1:412474184299:web:54c26448bae3af51ca972e",
-    measurementId: "G-1P6PXTLT30"
+    appId: "1:412474184299:web:01bb6f0f29cbe1f0ca972e",
+    measurementId: "G-W3F03HP2HL"
   },
 };
