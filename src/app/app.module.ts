@@ -21,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 const firebaseConfig = {
   apiKey: "AIzaSyBY1YtM8RpqOAhOzzdpJdeKFmSb0W_H1qw",
   authDomain: "colis-a767e.firebaseapp.com",
+  databaseURL: "https://colis-a767e-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "colis-a767e",
   storageBucket: "colis-a767e.appspot.com",
   messagingSenderId: "412474184299",

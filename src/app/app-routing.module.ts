@@ -7,7 +7,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  {path: '**', redirectTo:'/login'},
+  {path: '**', redirectTo:'/register'},
   { path: 'login', component: LoginComponent },
   { path: 'inscription-livreur', component: InscriptionLivreurComponent },
   { path: 'contact', component:ContactComponent},

@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AngularFireAuth, AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { Router } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from '../shared/auth.service'; // Importez votre service d'authentification si vous en avez un
 
 @Component({
   selector: 'app-register',
@@ -16,7 +17,9 @@ export class RegisterComponent {
   constructor(
     private fb:FormBuilder,
     private afAuth: AngularFireAuth,
-    private router: Router
+    private router: Router,
+    private authService: AuthService, // Injectez le service d'authentification
+
   ){
     this.createForm();
   }
@@ -27,7 +30,7 @@ export class RegisterComponent {
       password: ['', Validators.required]
     });
   }
-  async register() {
+  async signUp() {
     const email = this.registerForm.value.email;
     const password = this.registerForm.value.password;
 

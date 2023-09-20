@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  loginForm: FormGroup;
+  loginForm!: FormGroup;
   errorMessage: string;
 
   constructor(
@@ -30,7 +30,7 @@ export class LoginComponent {
     this.router.navigate(['/register']); // Remplacez 'inscription' par le chemin de votre page d'inscription
   }
 
-  login() {
+  signIn() {
     const email = this.loginForm.value.email;
     const password = this.loginForm.value.password;
 
