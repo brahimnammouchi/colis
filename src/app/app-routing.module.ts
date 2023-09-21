@@ -7,15 +7,14 @@ import { PricingComponent } from './pricing/pricing.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  {path: '**', redirectTo:'/register'},
   { path: 'login', component: LoginComponent },
   { path: 'inscription-livreur', component: InscriptionLivreurComponent },
-  { path: 'contact', component:ContactComponent},
-  {path: 'pricing', component:PricingComponent},
-  {path: 'login', component:LoginComponent},
-  {path: 'register', component: RegisterComponent},
-  // Ajoutez d'autres routes ici si nécessaire
+  { path: 'contact', component: ContactComponent },
+  { path: 'pricing', component: PricingComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: '**', redirectTo: '/login' }, // Gardez ceci à la fin
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
