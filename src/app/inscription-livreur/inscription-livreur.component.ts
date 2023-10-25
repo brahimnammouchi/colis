@@ -42,6 +42,7 @@ export class InscriptionLivreurComponent {
         .then(result => {
           if (result.success) {
             console.log(result.message);
+            this.registerForm.reset();
           } else {
             console.error(result.message);
           }
