@@ -18,6 +18,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 const firebaseConfig = {
   apiKey: "AIzaSyBY1YtM8RpqOAhOzzdpJdeKFmSb0W_H1qw",
   authDomain: "colis-a767e.firebaseapp.com",

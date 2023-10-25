@@ -143,3 +143,17 @@ footer {
 .btn-register:hover {
   background-color: #0056b3; /* Nouvelle couleur de fond au survol */
 }
+/* Ajoutez ces styles dans votre fichier CSS ou dans le style en ligne */
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-button {
+  margin-left: auto; /* Cela pousse les boutons vers la droite */
+}
