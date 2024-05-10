@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <nav>
+      <div class="container">
+          <h1>Livreur Express</h1>
+          <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#tarifs">Tarifs</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="navbar-button"><a routerLink="/inscription-livreur" class="btn">Devenir un livreur</a></li>
+              <li class="navbar-button"><a href="#" class="btn">devenir un client</a></li>
+      </ul>
+      </div>
+  </nav>
+</head>
+<body>
+  <header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription Livreur de Colis</title>
     <!-- Inclure Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+</header>
+
     <div class="container mt-5">
         <h1 class="text-center">Inscription Livreur de Colis</h1>
         <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
